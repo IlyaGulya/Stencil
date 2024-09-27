@@ -12,7 +12,7 @@ let package = Package(
   ],
   targets: [
     .target(name: "Stencil", dependencies: [
-      "PathKit-musl"
+      .product(name: "PathKit", package: "PathKit-musl"),
     ]),
     .testTarget(name: "StencilTests", dependencies: [
       "Stencil",

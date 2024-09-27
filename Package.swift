@@ -15,7 +15,7 @@ let package = Package(
       "PathKit"
     ]),
     .testTarget(name: "StencilTests", dependencies: [
-      "Stencil",
+      "Stencil-musl",
       "Spectre"
     ])
   ],

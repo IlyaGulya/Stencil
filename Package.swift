@@ -12,10 +12,10 @@ let package = Package(
   ],
   targets: [
     .target(name: "Stencil", dependencies: [
-      "PathKit"
+      "PathKit-musl"
     ]),
     .testTarget(name: "StencilTests", dependencies: [
-      "Stencil-musl",
+      "Stencil",
       "Spectre"
     ])
   ],
